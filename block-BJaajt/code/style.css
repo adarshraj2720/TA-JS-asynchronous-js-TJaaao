@@ -1,0 +1,48 @@
+header{
+    background-color: black;
+    padding: 20px 0px;
+    text-align: center;
+}
+h1{
+    font-size: 2rem;
+    color: aliceblue;
+}
+.input{
+    /* display: flex;
+    justify-content: center; */
+    /* text-align: center; */
+  
+    width: 10%;
+    height: 10px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    text-align: center;
+}
+.github{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 400px;
+
+}
+h2,h3{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.cat{
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+.cat-img{
+    border-radius: 0;
+}
