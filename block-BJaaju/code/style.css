@@ -1,0 +1,26 @@
+header{
+    background-color: black;
+    padding: 20px 0px;
+    margin-bottom: 20px;
+}
+h1{
+    text-align: center;   
+    color: white;
+    font-size: 1.5rem;
+}
+.input{
+    /* display: flex;
+    justify-content: center; */
+    /* text-align: center; */
+  
+    width: 10%;
+    height: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.images{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+margin: 50px 0px;
+}
