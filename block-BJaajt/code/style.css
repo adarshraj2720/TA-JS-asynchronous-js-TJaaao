@@ -1,3 +1,6 @@
+body{
+    margin-bottom: 30px;
+}
 header{
     background-color: black;
     padding: 20px 0px;
@@ -41,8 +44,33 @@ h2,h3{
     text-align: center;
     width: 200px;
     height: 200px;
-    margin: 0 auto;
+    margin: 5% auto;
 }
 .cat-img{
+    height: 200px;
+    width: 200px;
     border-radius: 0;
+    border: 2px solid black;
+}
+.new-btn{
+    padding: 10px 0px;
+    margin: 30px 0px;
+    width: 100%;
+}
+.follower,.following{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+.profile{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+img{
+    margin: 10px;
+    height: 100px;
+    width: 100px;
 }
