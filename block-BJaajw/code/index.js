@@ -1,25 +1,33 @@
 let news = document.querySelector('.news')
 let form = document.querySelector('form')
 let sourcenews = document.querySelector('.sourcenews')
+let isLoading = false;
+
+
+function handleSpinner() {
+    if (isLoading) {
+        news.innerHTML = `  <div class="donut"></div>`
+    }
+}
 
 let url = fetch(`https://api.spaceflightnewsapi.net/v3/articles?_limit=30`)
 
-url.then((data) =>{
-
-    if(!data.ok){
-        throw new Error (`Error Happen ${data.status}`);
+url.then((data) => {
+    
+    if (!data.ok) {
+        throw new Error(`Error Happen ${data.status}`);
     }
+    return data.json()
 
-   return data.json()
-
-} )
+})
     .then((value) => {
+        
         console.log(value)
         createUI(value)
     })
-    .catch((error)=>{
+    .catch((error) => {
         console.log(error)
-        news.innerText=error
+        news.innerText = error
     })
 
 
@@ -63,7 +71,8 @@ form.addEventListener('click', handleSubmit)
 
 function handleSubmit(event) {
     console.log(form.elements.newslist.value)
-
+    isLoading=true;
+    handleSpinner()
     let url = fetch(`https://api.spaceflightnewsapi.net/v3/articles?_limit=30`)
 
     url.then((data) => data.json())
@@ -81,7 +90,7 @@ function handleSubmit(event) {
 
 }
 
-var load =document.getElementById('loading');
-function loadfun(){
-    load.style.display="none";
+var load = document.getElementById('loading');
+function loadfun() {
+    load.style.display = "none";
 }
