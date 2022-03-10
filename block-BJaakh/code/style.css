@@ -1,0 +1,19 @@
+header{
+    text-align: center;
+    background-color: black;
+    color: antiquewhite;
+    padding: 10px 0px;
+}
+form{
+    text-align: center;
+    background-color: tan;
+    width: 500px;
+    margin: 0 auto;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom:  1px dashed antiquewhite;
+    
+}
