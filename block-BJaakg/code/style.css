@@ -1,0 +1,16 @@
+header{
+    text-align: center;
+    
+}
+.bookslist{
+    text-align: center;
+    /* margin: 10px ; */
+    margin: 20px auto;
+    width: 46%;
+    border:  2px dashed red;
+}
+.books{
+    display: flex;
+    flex-wrap: wrap;
+
+}
